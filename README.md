@@ -6,6 +6,19 @@
       </h1>
 </div>
 
+<br/>
+
+<div>
+<h3>🌟 
+MovieTime Cinema Automation is a desktop application designed to streamline cinema management processes, providing a comprehensive solution for cinema owners and administrators. It offers a range of features to automate various aspects of cinema operations, enhancing efficiency and customer experience. </h3>
+
+- Movie Management: Easily add, edit, and remove movies from the cinema catalog.
+- Showtime Scheduling: Schedule showtimes for movies with flexibility and ease.
+- Seat Reservation: Enable seat selection and reservation for booked tickets.
+- Customer Management: Maintain a database of customer information for improved service.
+
+<h3>🚀 Ready to explore the QR Universe? Download the app now and let the adventure begin!</h3>
+</div>
 <br/> 
 
 # Screenshots
