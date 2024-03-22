@@ -8,20 +8,6 @@
 
 <br/> 
 
-<h3>🌟 Welcome to AI QR Magic, where every code tells a unique story.</h3>
-  
-- Generate, Customize, Scan, Save, and Sownload QR codes effortlessly.
-- Create multiple QR code types for various adventures.
-- Customize your codes with a splash of colors.
-- Easily scan QR codes from your camera or gallery.
-- Save your QR codes for convenient sharing.
-- Switch between light and dark modes to set the mood for your QR code journey.
-
-<h3>🚀 Ready to explore the QR Universe? Download the app now and let the adventure begin!</h3>
-</div>
-
-<br/> 
-
 # Screenshots
 | <img src="https://github.com/achrafelmasoudi/MovieTime_CinemaAutomation/assets/154275618/e3dc524e-19ce-4ad5-a862-398899b27318"> |
 | ---------------------------------------------- |
