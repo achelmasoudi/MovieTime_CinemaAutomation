@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F074EBF1-D789-4D6F-BB34-9C2C744F5D2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MovieTime</RootNamespace>
+    <AssemblyName>MovieTime</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectDB.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BiletSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BiletSat.Designer.cs">
+      <DependentUpon>BiletSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FilmEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FilmEkle.Designer.cs">
+      <DependentUpon>FilmEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FilmSilGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FilmSilGuncelle.Designer.cs">
+      <DependentUpon>FilmSilGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalonEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalonEkle.Designer.cs">
+      <DependentUpon>SalonEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalonSilGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalonSilGuncelle.Designer.cs">
+      <DependentUpon>SalonSilGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SatisListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SatisListeleme.Designer.cs">
+      <DependentUpon>SatisListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeansEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeansEkle.Designer.cs">
+      <DependentUpon>SeansEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SilveyaGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SilveyaGuncelle.Designer.cs">
+      <DependentUpon>SilveyaGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcretGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcretGuncelle.Designer.cs">
+      <DependentUpon>UcretGuncelle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BiletSat.resx">
+      <DependentUpon>BiletSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FilmEkle.resx">
+      <DependentUpon>FilmEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FilmSilGuncelle.resx">
+      <DependentUpon>FilmSilGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalonEkle.resx">
+      <DependentUpon>SalonEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalonSilGuncelle.resx">
+      <DependentUpon>SalonSilGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SatisListeleme.resx">
+      <DependentUpon>SatisListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeansEkle.resx">
+      <DependentUpon>SeansEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SilveyaGuncelle.resx">
+      <DependentUpon>SilveyaGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcretGuncelle.resx">
+      <DependentUpon>UcretGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectedAddMovie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unselectedAddMovie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectedHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unselectedHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectedBilet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unselectedBilet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectedClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectedMinimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unselectedClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unselectedMinimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosKoltukIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doluKoltukIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmPosterIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectedSatisListeleme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unselectedSatisListeleme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectedSeansEkle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unselectedSeansEkle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salonScreenIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seatIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koltukNoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucretIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmAdiIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yonetmenIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmSuresiIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmEkleBtnIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salonAdiICon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectedDeleteMovie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unselectedDeleteMovie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmSilGuncelleIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkishLiraIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
