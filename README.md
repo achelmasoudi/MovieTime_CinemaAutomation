@@ -1,13 +1,13 @@
 <div align="center">
       <h1> 
             Movie Time - Cinema Automation
-            <br/>
+            <br/><br/>
       </h1>
 </div>
 
 <br/>
 
-| <img src="https://github.com/achrafelmasoudi/MovieTime_CinemaAutomation/assets/154275618/e3dc524e-19ce-4ad5-a862-398899b27318"> |
+| <img src="https://github.com/achrafelmasoudi/MovieTime_CinemaAutomation/assets/154275618/49008cd8-8a14-41b0-89c8-db5f1918d0ef"> |
 | ---------------------------------------------- |
 
 <br/>
