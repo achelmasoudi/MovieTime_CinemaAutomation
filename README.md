@@ -1,7 +1,7 @@
 <div align="center">
       <h1> 
             Movie Time - Cinema Automation
-            <br/><br/>
+            <br/>
       </h1>
 </div>
 
